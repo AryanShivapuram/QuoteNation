@@ -27,6 +27,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 - Clone the Project, in your terminal type:
   ```
   git clone https://github.com/AryanShivapuram/QuoteNation.git
+  cd QuoteNation/
   ```
 
 ### Set up the PostgreSQL database 
