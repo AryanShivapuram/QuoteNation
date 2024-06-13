@@ -27,19 +27,26 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 ### Set up the PostgreSQL database 9please correct this part)
 
-Navigate to PostgreSQL Bin Folder:
+- **Windows:**
+  - Open Command Prompt or PowerShell.
+  - Type:
+    ```
+    cd "C:\Program Files\PostgreSQL\15\bin"
+    ```
+    Replace `"C:\Program Files\PostgreSQL\15\bin"` with your PostgreSQL installation's `bin` folder path.
 
-- Windows: Open Command Prompt or PowerShell and type
-  cd "C:\Program Files\PostgreSQL\15\bin"
-  (Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.)
+- **macOS/Linux:**
+  - Open Terminal.
+  - Type:
+    ```
+    cd /usr/local/bin
+    ```
+    Adjust the path based on your PostgreSQL installation directory.
+Feel free to copy and paste this directly into a text document. Adjust the paths as necessary to match your specific PostgreSQL installation setup.
 
-macOS/Linux: 
 
-Open Terminal
 
-Type
 
-cd /usr/local/bin
 
-Adjust the path based on your PostgreSQL installation directory.
+
 
