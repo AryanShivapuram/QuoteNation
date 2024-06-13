@@ -25,7 +25,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 - Ensure Node.js is installed on your deviece.
 - Ensure PostgreSQL is installed and ensure it's running.
 
-### Set up the PostgreSQL database 9please correct this part)
+### Set up the PostgreSQL database 
 
 - **Windows:**
   - Open Command Prompt or PowerShell.
@@ -42,7 +42,20 @@ QuoteNation is a participatory web application where users share their quotes, e
     cd /usr/local/bin
     ```
     Adjust the path based on your PostgreSQL installation directory.
-Feel free to copy and paste this directly into a text document. Adjust the paths as necessary to match your specific PostgreSQL installation setup.
+
+### Database
+
+- Copy the path of `data.sql` in the `database` folder of the project.
+- in the terminal type (for windows) :
+  ```
+  psql -U <username (usally postgres)> -d postgres -f "C:\path\to\data.sql"
+  ```
+- in the terminal type (for mac/linux) :
+  ```
+  psql -U <username (usally postgres)> -d postgres -f /path/to/data.sql
+
+  ```
+  Audjust the `data.sql` file path and `username`.
 
 
 
