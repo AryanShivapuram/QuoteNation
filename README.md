@@ -57,7 +57,36 @@ QuoteNation is a participatory web application where users share their quotes, e
   ```
   Audjust the `data.sql` file path and `username`.
 
+### Running Project
 
+- In the terminal, change the porject's folder is not.
+  ```
+  cd QuoteNation
+  ```
+- Now install the Node Packages
+  ```
+  npm i
+  ```
+- change the Database settings in `index.js`
+  ```
+  const db = new pg.Client({
+  user: "YOUR_USERNAME (usally postgres)",
+  host: "YOUR_HOST (usally localhost)",
+  database: "quotenation",
+  password: "YOUR_PASSWORD",
+  port: 5432,
+  ```
+
+### Starting the server
+
+- If all the above steps were donce correctly, you could start the project, type:
+  ```
+  node index.js
+  ```
+- Go to `http://localhost:3000/` to enrich your life!!
+- To stop the server, do `CTRL + C` on your terminal
+
+### Made By Aryan Shivapuram as a way to make peoples lives better and happier and spread positivity.
 
 
 
