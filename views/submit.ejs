@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submit.css">
+    <title>Submit Page</title>
+</head>
+<body>
+
+<div class="submit-container">
+    <form class="submit-form" action="/submit-submit" method="post">
+        <div class="submit-header">
+            <h2>Submit</h2>
+            <% if (typeof error !== 'undefined') { %>
+                <h5 id="error" class="error-message"><%= error %></h5>
+            <% } else if (typeof success !== 'undefined') { %>
+                <h5 id="success" class="success-message"><%= success %></h5>
+            <% } %>
+            <a class="close-button" href="/" method="get">X</a>
+        </div>
+        <div class="input-group">
+            <label for="quote">Quote (<span id="wordCount">0</span>/200)</label>
+            <textarea id="quote" name="quote" rows="4" style="width:100%;" maxlength="200" required></textarea>
+        </div>
+        <div class="input-group">
+            <label for="categories_choose">Category:</label>
+            <select id="categories_choose" name="categories_choose">
+                <option value="Inspirational">Inspirational</option>
+                <option value="Love">Love</option>
+                <option value="Life">Life</option>
+                <option value="Happiness">Happiness</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Success">Success</option>
+                <option value="Wisdom">Wisdom</option>
+                <option value="Humor">Humor</option>
+                <option value="Motivational">Motivational</option>
+                <option value="Courage">Courage</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+
+<script>
+    
+    var textarea = document.getElementById('quote');
+
+    
+    textarea.addEventListener('input', function() {
+        
+        var value = textarea.value;
+        
+        
+        var length = value.length;
+
+        document.getElementById('wordCount').textContent = length;
+    });
+</script>
+
+</body>
+</html>

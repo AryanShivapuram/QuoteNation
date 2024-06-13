@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="signup-container">
+        <form class="signup-form" action="/submit-signup" method="post">
+            <div class="signup-header">
+                <h2>Sign Up</h2>
+                <% if(locals.data) { %>
+                    <h5 class="ok-message"><%= data %></h5>
+                <% } %>
+                
+                <% if (typeof error !== 'undefined') { %>
+                    <h5 id="erroror" class="error-message"><%= error %></h5>
+                <% } %>
+                <a class="close-button" href="/" method="get">X</a>
+            </div>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+        <div class="signup-link">
+            Already have an account? <a href="/login">Login</a>
+        </div>
+    </div>
+</body>
+</html>

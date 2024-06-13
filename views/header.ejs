@@ -1,0 +1,20 @@
+<div id="header">
+    <div class="left">
+        <a href="#section2">Categories</a>
+        <a href="/">More</a>
+    </div>
+    <a  class="center">
+        QuoteNation
+    </a>
+    <div class="right">
+        <% if (loggedIn) { %>
+            <a href="/submit">Submit</a>
+            <a href="/logout">Logout</a> 
+        <% } else { %>
+            <a href="/login">Submit</a>
+            <a href="/login">Login</a>
+            
+        <% } %>
+    </div>
+</div>
+

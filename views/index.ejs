@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>QuoteNation</title>
+</head>
+<body>
+
+    <%- include('header.ejs') %>
+    <div id="popup" class="popup">
+      <h5 class="ok-message" id="popupMessage"></h5>
+  </div>
+    
+    <div id="middle">
+        <div class="midLeft">
+            <p>Popular<br>Quotes</p>
+            
+        </div>
+
+        <div class="midRight">
+          <% quotes.forEach(function(quote, index) { %>
+            <div class="R<%= index + 1 %>">
+              <p class="quote-text"><%= quote.quotes %></p>
+              <br><p class="quote-text"><%= quote.username%></p>
+            </div>
+          <% }); %>
+        </div>
+        
+    </div>
+    <section id="section2"></section>
+
+    <div class="outer-container">
+        <div class="middle-container">
+          <div class="inner-container">
+            <div class="inner-left">
+              <div class="category-button" data-category="Inspirational">Inspirational</div>
+              <div class="category-button" data-category="Love">Love</div>
+              <div class="category-button" data-category="Life">Life</div>
+              <div class="category-button" data-category="Happiness">Happiness</div>
+              <div class="category-button" data-category="Friendship">Friendship</div>
+              <div class="category-button" data-category="Success">Success</div>
+              <div class="category-button" data-category="Wisdom">Wisdom</div>
+              <div class="category-button" data-category="Humor">Humor</div>
+              <div class="category-button" data-category="Motivation">Motivation</div>
+              <div class="category-button" data-category="Courage">Courage</div>
+            </div>
+            <div class="inner-right">
+              <p>Categories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="#">About Me</a>
+            
+          </div>
+          <div class="footer-center">
+            <p>© 2024 Aryan Shivapuram</p>
+          </div>
+          <div class="footer-right">
+            
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const categoryButtons = document.querySelectorAll(".category-button");
+      
+          categoryButtons.forEach(button => {
+            button.addEventListener("click", async () => {
+              const category = button.getAttribute("data-category");
+      
+              try {
+                const response = await fetch(`/quotes?category=${category}`);
+                const data = await response.json();
+      
+                if (data.quotes) {
+                  const midRightDiv = document.querySelector(".midRight");
+                  midRightDiv.innerHTML = "";
+      
+                  data.quotes.forEach((quote, index) => {
+                    const quoteDiv = document.createElement("div");
+                    quoteDiv.classList.add(`R${index + 1}`);
+                    
+                    const quoteText = document.createElement("p");
+                    quoteText.classList.add("quote-text");
+                    quoteText.textContent = quote.quotes;
+      
+                    const quoteAuthor = document.createElement("p");
+                    quoteAuthor.classList.add("quote-text");
+                    quoteAuthor.textContent = quote.username;
+      
+                    quoteDiv.appendChild(quoteText);
+                    quoteDiv.appendChild(quoteAuthor);
+                    
+                    midRightDiv.appendChild(quoteDiv);
+                  });
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              } catch (error) {
+                console.error("Error fetching quotes:", error);
+              }
+            });
+          });
+        });
+      </script>
+      
+</body>
+</html>

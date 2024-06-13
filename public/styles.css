@@ -1,0 +1,251 @@
+body {
+  background: linear-gradient(301deg, #CAA583 36.01%, #9D6752 75.32%, #524043 96.05%, #21212B 109.27%), linear-gradient(301deg, #CAA583 36.01%, #9D6752 75.32%, #524043 96.05%, #21212B 109.27%);
+}
+
+#header {
+  margin: 3% 4% 10% 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #2B4250;
+  height: 4.2rem;
+}
+.left,
+.right {
+  display: flex;
+}
+.center {
+  color: #F9D3A2;
+  font-family: Inter;
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.left a,
+.right a {
+  margin: 0 40px;
+  color: #F9D3A2;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#middle {
+  margin: 5% 4% 0 4%;
+  display: flex;
+}
+
+.midLeft > * {
+  color: #21212B;
+  font-family: Inika;
+  font-size: 6.25rem;
+  width: 40%;
+  font-weight: 400;
+  margin-left: 5%;
+  white-space: nowrap;
+}
+
+.midRight {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 5%;
+}
+
+.midRight > * {
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.R1 {
+  background: #2D4150;
+  color: #F1CB9D;
+  font-family: Inter;
+  font-size: 1.1rem;
+}
+.R2 {
+  background: #9D6652;
+  color: #000000;
+  font-family: Inter;
+  font-size: 1.1rem;
+  
+}
+.R3 {
+  background: #9D6652;
+  color: #000000;
+  font-family: Inter;
+  font-size: 1.1rem;
+}
+.R4 {
+  background: #73766B;
+  color: #161413;
+  font-family: Inter;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 10px;
+}
+
+.crazy {
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.one {
+  color: #F1CB9D;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.two {
+  color: #000000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.outer-container {
+  margin: 10% 4% 0 4%;
+  border-radius: 0.625rem;
+  background: rgba(253, 253, 253, 0.20);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 6.1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 4% 7% 0;
+}
+
+.inner-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.inner-left {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  width: 60%;
+  padding-right: 6%;
+}
+
+.inner-left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #513E42;
+  border-radius: 0.68413rem;
+  text-align: center;
+  color: #F4CFA0;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.inner-right {
+  display: flex;
+  color: #21212B;
+  font-family: Inika;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#footer {
+  background: #2B4250;
+  padding: 1.5rem 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  margin: 7% 4% 3% 4%;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F9D3A2;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-left a, .footer-right a {
+  color: #F9D3A2;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center p {
+  margin: 0;
+}
+
+.category-button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.category-button:active {
+  animation: clickEffect 0.2s forwards;
+}
+
+.category-button:hover {
+  background-color: #2D4150;
+}
+
+@keyframes clickEffect {
+  0% {
+      transform: scale(1);
+      background-color: #e0e0e0;
+  }
+  50% {
+      transform: scale(0.95);
+      background-color: #d0d0d0;
+  }
+  100% {
+      transform: scale(1);
+      background-color: #f0f0f0;
+  }
+}
