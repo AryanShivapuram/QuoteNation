@@ -7,7 +7,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 - Browse popular quotes by category: Inspirational, Love, Life, Happiness, Friendship, Success, Wisdom, Humor, Motivation, Courage.
 - Submit new quotes to share with the community.
 - User authentication and session management.
-- Responsive design for desktop and mobile devices.
+- Artistic, creative and Responsive design for desktop (not mobiles).
 
 
 ## Technologies Used
@@ -24,4 +24,6 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 - Ensure Node.js is installed on your deviece.
 - Ensure PostgreSQL is installed and ensure it's running.
+
+- 
 
