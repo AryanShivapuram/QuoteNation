@@ -24,7 +24,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 - Ensure Node.js is installed on your deviece.
 - Ensure PostgreSQL is installed and ensure it's running.
-- Clone the Project => in your terminal, type:
+- Clone the Project in your terminal. Type:
   
   ```
   git clone https://github.com/AryanShivapuram/QuoteNation.git
@@ -67,7 +67,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 - In the terminal, change the porject's folder is not.
   ```
-  cd QuoteNation
+  cd QuoteNation/
   ```
 - Now install the Node Packages
   ```
@@ -93,6 +93,10 @@ QuoteNation is a participatory web application where users share their quotes, e
 - To stop the server, do `CTRL + C` on your terminal
 
 ### Made By Aryan Shivapuram as a way to make peoples lives better and happier and spread positivity.
+
+**Contact me through:**
+-a.shivapuram@iitg.ac.in
+-shivapuramaryan@gmail.com
 
 
 
