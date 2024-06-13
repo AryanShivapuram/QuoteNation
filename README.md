@@ -65,7 +65,7 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 ### Running Project
 
-- In the terminal, change the porject's folder is not.
+- In the terminal, change the directory to project's folder if not.
   ```
   cd QuoteNation/
   ```
