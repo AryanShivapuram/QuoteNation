@@ -1,6 +1,6 @@
 # QuoteNation
 
-QuoteNation is a participatory web application where users share their quotes, enriching lives one quote at a time. Explore a diverse collection across various categories and contribute your own insights to inspire others.
+QuoteNation is a participatory web application where users share their quotes, enriching lives one quote at a time. Explore a diverse collection across various categories and contribute their own insights to inspire others.
 
 ## Features
 
