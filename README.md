@@ -25,5 +25,24 @@ QuoteNation is a participatory web application where users share their quotes, e
 - Ensure Node.js is installed on your deviece.
 - Ensure PostgreSQL is installed and ensure it's running.
 
-- 
+### Set up the PostgreSQL database 9please correct this part)
+
+Navigate to PostgreSQL Bin Folder:
+
+Windows:
+
+Open Command Prompt or PowerShell.
+Type:
+bash
+Copy code
+cd "C:\Program Files\PostgreSQL\15\bin"
+Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.
+macOS/Linux:
+
+Open Terminal.
+Type:
+bash
+Copy code
+cd /usr/local/bin
+Adjust the path based on your PostgreSQL installation directory.
 
