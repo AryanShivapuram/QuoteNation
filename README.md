@@ -32,17 +32,20 @@ Navigate to PostgreSQL Bin Folder:
 Windows:
 
 Open Command Prompt or PowerShell.
-Type:
-bash
-Copy code
-cd "C:\Program Files\PostgreSQL\15\bin"
-Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.
-macOS/Linux:
 
-Open Terminal.
-Type:
-bash
-Copy code
+Type
+
+cd "C:\Program Files\PostgreSQL\15\bin"
+
+Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.
+
+macOS/Linux: 
+
+Open Terminal
+
+Type
+
 cd /usr/local/bin
+
 Adjust the path based on your PostgreSQL installation directory.
 
