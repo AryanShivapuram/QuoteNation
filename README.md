@@ -24,6 +24,10 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 - Ensure Node.js is installed on your deviece.
 - Ensure PostgreSQL is installed and ensure it's running.
+- Clone the Project, in your terminal type:
+  ```
+  git clone https://github.com/AryanShivapuram/QuoteNation.git
+  ```
 
 ### Set up the PostgreSQL database 
 
