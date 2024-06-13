@@ -8,3 +8,20 @@ QuoteNation is a participatory web application where users share their quotes, e
 - Submit new quotes to share with the community.
 - User authentication and session management.
 - Responsive design for desktop and mobile devices.
+
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- PostgreSQL
+- EJS (Embedded JavaScript)
+- HTML/CSS/JavaScript
+
+## Setup
+
+### Prerequisites
+
+- Ensure Node.js is installed on your deviece.
+- Ensure PostgreSQL is installed and ensure it's running.
+
