@@ -29,15 +29,9 @@ QuoteNation is a participatory web application where users share their quotes, e
 
 Navigate to PostgreSQL Bin Folder:
 
-Windows:
-
-Open Command Prompt or PowerShell.
-
-Type
-
-cd "C:\Program Files\PostgreSQL\15\bin"
-
-Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.
+- Windows: Open Command Prompt or PowerShell and type
+  cd "C:\Program Files\PostgreSQL\15\bin"
+  (Replace "C:\Program Files\PostgreSQL\15\bin" with your PostgreSQL installation's bin folder path.)
 
 macOS/Linux: 
 
